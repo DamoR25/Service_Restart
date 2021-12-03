@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Check Service Print Spooler - Spooler
-      win_command: powershell.exe "$ServiceName = 'Serenade'
+      win_command: powershell.exe "$ServiceName = 'Spooler'
                     $arrService = Get-Service -Name $ServiceName
 
 					while ($arrService.Status -ne 'Running')
